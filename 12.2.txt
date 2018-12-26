@@ -29,4 +29,8 @@ add  和 commit 是每一次pull 和push 之前的必须操作。这就是完整
 
 git push -u origin master	其实平时只需要git pull 和git push 就可以拉取和推送
 不需要加 origin ma...(分支名)  只要你第一次推送加了个  -u  表示默认改分支。
+"git reset HEAD   这个东西表示版本回退，就是你每次提交都是一个版本，就比如你QQ
+是2.101版本这个命令回退到2.100  自己去学，我不演示。
+现在git pull 是没有拉东西的，因为远程没有更新,可以push,我现在改一下远程
+看我先push  看报错	前面没改之前是可以push的   萨法十分
 	
