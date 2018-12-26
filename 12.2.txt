@@ -1,16 +1,28 @@
-﻿
+﻿ssh-keygen -t rsa -C "1713944558@qq.com"     生成一个ssh 密钥   
+ git remote add origin git@github.com:michaelliao/learngit.git  
+git remote add origin   连接一个远程仓库， 
+正常情况下，如果本地仓库是刚建的，远程仓库也是刚建的，用上面那条命令可以直接没有我
+前面碰到的那些问题。
+先讲情况一：两个仓库都是干净的。（刚初始化的）
+	1  直接git  remote add  建立连接之后
+	2  远程有read.md文件，就git  pull命令
+		 git  pull   ==	git fetch + git merge	
+			git fetch :将远程代码拉取过来，merge  合并
+	3  git  push 命令表示将本地分支推送到远程
+	不管什么情况下，都要保持远程分支和本地分支的工作区是一致的。
+情况er: 就说我刚才那个情况。你本地仓库是先建好的，然后里面不干净，远程仓库也有文件，
+	这种情况两个仓库毫无关联  使用remote 连接之后，你pull 会报错。
+	git pull --rebase origin master   解决冲突并合并
+现在，要把本地仓库的内容提交到github ,我让你学这个就是把你写的代码提交上去。
+远程仓库刚才新建，是只有一个md文件，但是本地有四个文件，一个从github pull下来的-readme.md
+	
+	操作
+git status     ---不管什么时候 这个命令随时可以用，它会提示你该使用什么命令，和查看状态
+ working tree clean ----工作数是空的。这是因为我前面commit 了。提交的内容全部到暂存区去了
+我现在保存一下、当作修改，现在git status 是没有修改、 
+modified:   12.2.txt  表示被修改了。到这里我试试pull 不能直接pull
+第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
 
-
-1：安装xmind------
-2：学git -----百度廖雪峰git
-3：		用xmind------整理今天的学习内容。
-
-
-git命令
-	ls	查看目录		
-	cd  目录-----------切换目录	
-	mkdir	文件夹名--------新建文件夹
-git init  这个命令表示初始化本地仓库。。就是在本目录下建立一个仓库  这个命令使用之后会产生
-   .git wenjian、
-
-是发放
+第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+add  和 commit 是每一次pull 和push 之前的必须操作。
+	
