@@ -24,5 +24,9 @@ modified:   12.2.txt  表示被修改了。到这里我试试pull 不能直接pu
 第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
 
 第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
-add  和 commit 是每一次pull 和push 之前的必须操作。
+add  和 commit 是每一次pull 和push 之前的必须操作。这就是完整的操作。
+每次push 之前养成pull 的习惯。保证和远程同步
+
+git push -u origin master	其实平时只需要git pull 和git push 就可以拉取和推送
+不需要加 origin ma...(分支名)  只要你第一次推送加了个  -u  表示默认改分支。
 	
