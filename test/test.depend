@@ -1,14 +1,6 @@
 # depslib dependency file v1.0
-1546606691 source:f:\code\test\main.c
+1546920804 source:f:\code\gittest\study_note\test\main.c
 	<stdio.h>
-	<stdlib.h>
-	<math.h>
 
-1546513850 source:f:\code\test\1\untitled3.c
-	<stdio.h>
-	<stdlib.h>
-
-1546521924 source:f:\code\test\1\p94.c
-	<stdio.h>
-	<stdlib.h>
+1546917568 source:f:\code\gittest\study_note\test\p207.c
 
